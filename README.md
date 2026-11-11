@@ -2,7 +2,7 @@
 
 ### IT Infrastructure & Technical Operations | AI Automation & System Integration
 
-Nearly 25 years of experience in systems, networking, telecom, infrastructure and business-critical IT operations. I now combine that foundation with practical AI automation and integration work.
+25 years of experience in systems, networking, telecom, infrastructure and business-critical IT operations. I now combine that foundation with practical AI automation and integration work.
 
 **Interested in remote roles, freelance projects and technical partnerships.**
 
