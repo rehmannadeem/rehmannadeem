@@ -1,66 +1,52 @@
 # Rehman Nadeem
 
-### IT Infrastructure & Technical Operations | AI Automation & System Integration
+### Founder, Armans.AI | Business Automation & AI Integration
 
-25 years of experience in systems, networking, telecom, infrastructure and business-critical IT operations. I now combine that foundation with practical AI automation and integration work.
+I build AI-assisted workflows for enquiries, customer support and online stores. Behind that work are nearly 25 years across IT systems, networking and technology-led business operations, including broadcast media.
 
-**Interested in remote roles, freelance projects and technical partnerships.**
+[Armans.AI](https://global.armans.ai) · [Work you can inspect](https://global.armans.ai/work/) · [For agencies](https://global.armans.ai/agencies/) · [LinkedIn](https://www.linkedin.com/in/rehman-nadeem-1b4002390/) · [hello@armans.ai](mailto:hello@armans.ai)
 
-[Personal portfolio](https://rehman-nadeem-portfolio.rehmannadeem.chatgpt.site) · [Professional CV](https://rehman-nadeem-portfolio.rehmannadeem.chatgpt.site/Rehman-Nadeem-CV.pdf) · [LinkedIn](https://www.linkedin.com/in/rehman-nadeem-1b4002390/) · [Professional enquiries](mailto:nadeem@armans.ai)
+## Work you can inspect
 
-## Selected work
+| Project | What it is | Status |
+| --- | --- | --- |
+| [Agent-Ready Audit](https://github.com/rehmannadeem/agent-ready) | Checks how a Shopify store presents itself to AI shopping tools. Command line and MCP server. | Tested tool, open source (MIT) |
+| [MSP Service Desk V1](https://github.com/rehmannadeem/armans-msp-service-desk) | Ticket triage, human approval, cited answers or an explicit no-guidance result, and an audit trail. | Working V1 on synthetic data |
+| [Shopify integration proof](https://github.com/rehmannadeem/armans-shopify-supportops) | n8n connected to the Shopify Admin GraphQL API with read-only product access. | Prototype on a development store |
 
-### MSP Service Desk Intelligence Layer — V1
+These are my own demonstrations, not client deployments. Each repository states what was tested and what was not.
 
-Ticket intake → AI triage → dispatcher approval → technician assignment → approved-knowledge retrieval → cited guidance or explicit no-guidance result → human resolution/escalation → audit trail.
+## What I build
 
-- Next.js, TypeScript, Supabase, PostgreSQL/pgvector, OpenAI API and Cloudflare.
-- Repository documents V1 technical acceptance on 26 September 2026.
-- Includes tenant isolation, human approval and cited knowledge retrieval.
-- Synthetic demo knowledge is identified explicitly.
-- Working V1 and technical pilot foundation; real MSP helpdesk integrations and commercial validation remain pending.
+- **Workflow automation builds.** n8n workflows and API integrations with input checks, retries, failure alerts and a log. Delivered under an agency's brand where required.
+- **Support assistants with approved knowledge.** Answers drafted only from approved documents, with sources shown and human approval at agreed points.
+- **Shopify agent-readiness audits.** A dated report on what AI shopping tools can read on a store, with fixes ranked by effort.
 
-[Project repository and acceptance evidence](https://github.com/rehmannadeem/armans-msp-service-desk)
+## How I work
 
-### Shopify SupportOps Integration Foundation
+- Agree the scope and the acceptance checks before building.
+- Give each system the least access it needs.
+- Keep a person at the approval points where a mistake would cost money or trust.
+- Hand over documentation and the access agreed in the scope.
 
-Controlled integration proof connecting n8n to a Shopify development store through the Admin GraphQL API.
+I use AI-assisted development. My part is the requirement, the design decisions, the testing and the delivery.
 
-- Secure authentication and store/product data retrieval.
-- Credentials held in the workflow credential system.
-- Product-read development-store proof only.
-- Production webhooks, retries, alerts, order/customer access and AI support workflows remain pending.
+## Background
 
-[Project repository and implementation scope](https://github.com/rehmannadeem/armans-shopify-supportops)
-
-## Professional foundation
-
-- Manager IT & Telecom, GeoTV Lahore — June 2006 to present.
-- System Administrator, Filmazia TV / Leo Communications — November 2003 to May 2006.
-- Associate Network/System Administrator, SkyCom Pvt Ltd — December 2001 to October 2003.
-
-Experience includes technical operations, systems administration, networks, telecom, connectivity, troubleshooting, infrastructure delivery, vendor coordination, team leadership and technical training.
-
-## Capabilities
-
-| Area | Current basis |
+| Area | Basis |
 | --- | --- |
-| IT infrastructure, networking and telecom | Established professional experience |
-| Technical operations, troubleshooting and leadership | Established professional experience |
-| AI workflows, knowledge retrieval and API integration | Current technical projects |
-| n8n and Shopify GraphQL integration | Documented development-store proof |
-| Python, JavaScript, SQL and Supabase | Applied and developing skills |
+| IT systems, networking and telecom operations | Established professional experience since 2001 |
+| Technical operations, troubleshooting, vendor coordination and training | Established professional experience |
+| n8n, REST and GraphQL API integration | Documented in the repositories above |
+| Retrieval from approved documents, Supabase and PostgreSQL | Documented in MSP Service Desk V1 |
+| Python, JavaScript and SQL | Applied and developing skills |
 
-I use AI-assisted development with explicit validation and documented implementation limits.
+MS Computer Science.
 
-## Armans.AI
+## Start a conversation
 
-Founder of [Armans.AI](https://armans.ai), my business platform for AI automation and system integration. Individual project maturity is stated above.
+Tell me what needs to work better: the process, the tools you use today and where it breaks.
 
-## Discuss a role or project
-
-Share the role or project, current process and desired outcome.
-
-**Email:** [nadeem@armans.ai](mailto:nadeem@armans.ai)  
-**Portfolio:** [Rehman Nadeem](https://rehman-nadeem-portfolio.rehmannadeem.chatgpt.site)  
-**LinkedIn:** [Rehman Nadeem](https://www.linkedin.com/in/rehman-nadeem-1b4002390/)
+**Email:** [hello@armans.ai](mailto:hello@armans.ai)
+**Website:** [global.armans.ai](https://global.armans.ai)
+**Location:** Lahore, Pakistan (UTC+5). Available for business and agency projects worldwide.
