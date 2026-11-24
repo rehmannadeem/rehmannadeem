@@ -1,0 +1,33 @@
+name: Support portfolio checks
+on:
+  push:
+    branches: [main]
+    paths: ['it-support-labs/**', '.github/workflows/support-portfolio.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify sign-in triage, trunk snapshots and queue report
+        run: |
+          python it-support-labs/support_cases.py --output "$RUNNER_TEMP/result.json"
+          diff -u it-support-labs/sample-result.json "$RUNNER_TEMP/result.json"
+      - name: Restore a versioned object using an in-process S3 emulator
+        run: |
+          python -m pip install 'moto[s3]>=5,<6' 'boto3>=1.35,<2'
+          python it-support-labs/s3_restore.py
+  recovery:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rehearse Windows file recovery and verify SHA-256
+        shell: pwsh
+        run: ./it-support-labs/windows-restore.ps1
