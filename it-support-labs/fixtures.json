@@ -1,0 +1,13 @@
+{
+  "sign_ins": [
+    {"createdDateTime":"2026-11-24T08:05:00Z","userPrincipalName":"editor@example.test","appDisplayName":"Bulletin","correlationId":"aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa1","status":{"errorCode":0}},
+    {"createdDateTime":"2026-11-24T08:02:00Z","userPrincipalName":"contractor@example.test","appDisplayName":"Bulletin","correlationId":"bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb2","status":{"errorCode":53003}},
+    {"createdDateTime":"2026-11-24T08:01:00Z","userPrincipalName":"editor@example.test","appDisplayName":"Bulletin","correlationId":"aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa2","status":{"errorCode":50076}},
+    {"createdDateTime":"2026-11-24T08:04:00Z","userPrincipalName":"reviewer@example.test","appDisplayName":"Shift planner","correlationId":"cccccccc-cccc-4ccc-8ccc-ccccccccccc3","status":{"errorCode":999999}}
+  ],
+  "trunk": {
+    "before":{"desk":{"mode":"trunking","allowed":"10,20,30-32","active":"10,20,30-32","forwarding":"10,20,30-32"},"distribution":{"mode":"trunking","allowed":"10,30-32","active":"10,30-32","forwarding":"10,30-32"}},
+    "after":{"desk":{"mode":"trunking","allowed":"10,20,30-32","active":"10,20,30-32","forwarding":"10,20,30-32"},"distribution":{"mode":"trunking","allowed":"10,20,30-32","active":"10,20,30-32","forwarding":"10,20,30-32"}}
+  },
+  "tickets":[["T01","Identity",15,60],["T02","Identity",60,60],["T03","Identity",75,60],["T04","Identity",null,60],["T05","Network",35,120],["T06","Network",130,120],["T07","Network",null,120],["T08","Network",null,120],["T09","Service desk",10,30],["T10","Service desk",18,30],["T11","Service desk",30,30],["T12","Service desk",null,30]]
+}
