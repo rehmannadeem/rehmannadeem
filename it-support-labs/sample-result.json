@@ -1,0 +1,115 @@
+{
+  "sign_in_triage": {
+    "editor@example.test": [
+      {
+        "time": "2026-11-24T08:01:00Z",
+        "application": "Bulletin",
+        "result": "MFA required",
+        "code": 50076,
+        "correlation": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa2"
+      },
+      {
+        "time": "2026-11-24T08:05:00Z",
+        "application": "Bulletin",
+        "result": "Success",
+        "code": 0,
+        "correlation": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaa1"
+      }
+    ],
+    "contractor@example.test": [
+      {
+        "time": "2026-11-24T08:02:00Z",
+        "application": "Bulletin",
+        "result": "Conditional Access blocked access",
+        "code": 53003,
+        "correlation": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb2"
+      }
+    ],
+    "reviewer@example.test": [
+      {
+        "time": "2026-11-24T08:04:00Z",
+        "application": "Shift planner",
+        "result": "Further review required",
+        "code": 999999,
+        "correlation": "cccccccc-cccc-4ccc-8ccc-ccccccccccc3"
+      }
+    ]
+  },
+  "trunk_validation": {
+    "before": [
+      {
+        "vlan": 20,
+        "passes_snapshots": false,
+        "issues": [
+          "distribution: VLAN 20 absent from allowed",
+          "distribution: VLAN 20 absent from active",
+          "distribution: VLAN 20 absent from forwarding"
+        ]
+      },
+      {
+        "vlan": 10,
+        "passes_snapshots": true,
+        "issues": []
+      },
+      {
+        "vlan": 99,
+        "passes_snapshots": false,
+        "issues": [
+          "desk: VLAN 99 absent from allowed",
+          "desk: VLAN 99 absent from active",
+          "desk: VLAN 99 absent from forwarding",
+          "distribution: VLAN 99 absent from allowed",
+          "distribution: VLAN 99 absent from active",
+          "distribution: VLAN 99 absent from forwarding"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "vlan": 20,
+        "passes_snapshots": true,
+        "issues": []
+      },
+      {
+        "vlan": 10,
+        "passes_snapshots": true,
+        "issues": []
+      },
+      {
+        "vlan": 99,
+        "passes_snapshots": false,
+        "issues": [
+          "desk: VLAN 99 absent from allowed",
+          "desk: VLAN 99 absent from active",
+          "desk: VLAN 99 absent from forwarding",
+          "distribution: VLAN 99 absent from allowed",
+          "distribution: VLAN 99 absent from active",
+          "distribution: VLAN 99 absent from forwarding"
+        ]
+      }
+    ]
+  },
+  "ticket_report": [
+    {
+      "team": "Identity",
+      "tickets": 4,
+      "closed": 3,
+      "open": 1,
+      "breached": 1
+    },
+    {
+      "team": "Network",
+      "tickets": 4,
+      "closed": 2,
+      "open": 2,
+      "breached": 1
+    },
+    {
+      "team": "Service desk",
+      "tickets": 4,
+      "closed": 3,
+      "open": 1,
+      "breached": 0
+    }
+  ]
+}
